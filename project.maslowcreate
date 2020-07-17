@@ -8,6 +8,141 @@
     "topLevel": true,
     "allAtoms": [
         {
+            "atomType": "Translate",
+            "name": "Translate",
+            "x": 0.21888726207906295,
+            "y": 0.1417624521072797,
+            "uniqueID": 107132,
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 1
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ]
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.11200585651537336,
+            "y": 0.36015325670498083,
+            "uniqueID": 111225,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 0.875
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 2
+                }
+            ]
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.3067349926793558,
+            "y": 0.2796934865900383,
+            "uniqueID": 101047,
+            "ioValues": [
+                {
+                    "name": "3D shape 1",
+                    "ioValue": 10
+                },
+                {
+                    "name": "3D shape 2",
+                    "ioValue": 10
+                }
+            ]
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.1815519765739385,
+            "y": 0.5095785440613027,
+            "uniqueID": 456034,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 1.25
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 1.25
+                }
+            ]
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5387994143484627,
+            "y": 0.367816091954023,
+            "uniqueID": 449322,
+            "ioValues": [
+                {
+                    "name": "height",
+                    "ioValue": 120
+                }
+            ]
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.39311859443631036,
+            "y": 0.5823754789272031,
+            "uniqueID": 910052,
+            "ioValues": []
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.14202049780380674,
+            "y": 0.7662835249042146,
+            "uniqueID": 394979,
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 1.625
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 1.625
+                }
+            ]
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.664714494875549,
+            "y": 0.5134099616858238,
+            "uniqueID": 270416,
+            "ioValues": [],
+            "selectedColorIndex": "10"
+        },
+        {
+            "atomType": "Add BOM Tag",
+            "name": "Add BOM Tag",
+            "x": 0.7906295754026355,
+            "y": 0.5095785440613027,
+            "uniqueID": 796964,
+            "ioValues": [],
+            "BOMitem": {
+                "BOMitemName": "1-5/8ths Unistrut 10 foot",
+                "numberNeeded": 1,
+                "costUSD": 22.58,
+                "source": "https://www.homedepot.com/p/Superstrut-10-ft-12-Gauge-Half-Slotted-Metal-Framing-Strut-Channel-Silver-Galvanized-ZA12HS10EG/202714274",
+                "totalNeeded": 1,
+                "radius": 0.015384615384615385
+            }
+        },
+        {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
@@ -15,6 +150,71 @@
             "ioValues": []
         }
     ],
-    "allConnectors": [],
-    "fileTypeVersion": 1
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 1",
+            "ap2Primary": false,
+            "ap1ID": 107132,
+            "ap2ID": 101047
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 111225,
+            "ap2ID": 107132
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap2Primary": false,
+            "ap1ID": 101047,
+            "ap2ID": 910052
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "3D shape 2",
+            "ap2Primary": false,
+            "ap1ID": 456034,
+            "ap2ID": 101047
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 449322,
+            "ap2ID": 270416
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 910052,
+            "ap2ID": 449322
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap2Primary": false,
+            "ap1ID": 394979,
+            "ap2ID": 910052
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": 270416,
+            "ap2ID": 796964
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": 796964
+        }
+    ],
+    "fileTypeVersion": 1,
+    "filetypeVersion": 1,
+    "circleSegmentSize": 2
 }
