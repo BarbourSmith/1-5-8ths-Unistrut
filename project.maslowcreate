@@ -15,6 +15,10 @@
             "uniqueID": 107132,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/393521/111225Rectangle"
+                },
+                {
                     "name": "xDist",
                     "ioValue": 0
                 },
@@ -87,6 +91,10 @@
             "uniqueID": 449322,
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "atoms/393521/910052Difference"
+                },
+                {
                     "name": "height",
                     "ioValue": 120
                 }
@@ -98,7 +106,16 @@
             "x": 0.39311859443631036,
             "y": 0.5823754789272031,
             "uniqueID": 910052,
-            "ioValues": []
+            "ioValues": [
+                {
+                    "name": "geometry2",
+                    "ioValue": "atoms/393521/101047Assembly"
+                },
+                {
+                    "name": "geometry1",
+                    "ioValue": "atoms/393521/394979Rectangle"
+                }
+            ]
         },
         {
             "atomType": "Rectangle",
@@ -123,31 +140,26 @@
             "x": 0.664714494875549,
             "y": 0.5134099616858238,
             "uniqueID": 270416,
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "atoms/393521/449322Extrude"
+                }
+            ],
             "selectedColorIndex": "10"
-        },
-        {
-            "atomType": "Add BOM Tag",
-            "name": "Add BOM Tag",
-            "x": 0.7906295754026355,
-            "y": 0.5095785440613027,
-            "uniqueID": 796964,
-            "ioValues": [],
-            "BOMitem": {
-                "BOMitemName": "1-5/8ths Unistrut 10 foot",
-                "numberNeeded": 1,
-                "costUSD": 22.58,
-                "source": "https://www.homedepot.com/p/Superstrut-10-ft-12-Gauge-Half-Slotted-Metal-Framing-Strut-Channel-Silver-Galvanized-ZA12HS10EG/202714274",
-                "totalNeeded": 1,
-                "radius": 0.015384615384615385
-            }
         },
         {
             "atomType": "Output",
             "name": "Output",
             "x": 0.9853587115666179,
             "y": 0.5,
-            "ioValues": []
+            "uniqueID": 110538,
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "atoms/393521/270416Color"
+                }
+            ]
         }
     ],
     "allConnectors": [
@@ -202,16 +214,10 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap2Primary": true,
-            "ap1ID": 270416,
-            "ap2ID": 796964
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "number or geometry",
             "ap2Primary": false,
-            "ap1ID": 796964
+            "ap1ID": 270416,
+            "ap2ID": 110538
         }
     ],
     "fileTypeVersion": 1,
